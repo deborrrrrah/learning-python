@@ -5,6 +5,9 @@ class Price :
 
     def add(self, added_value) :
         self.__value += added_value
+
+    def get_price(self) :
+        return self.__value
     
     def to_string(self) :
         return "Rp{},00".format(self.__value) if self.__value is not None else "Rp0,00"
